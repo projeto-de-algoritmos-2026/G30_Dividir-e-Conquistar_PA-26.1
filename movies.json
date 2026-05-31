@@ -1,0 +1,204 @@
+{
+  "filmes": [
+    {
+      "id": 1,
+      "titulo": "Interestelar",
+      "genero": "Ficção Científica",
+      "ano": 2014,
+      "diretor": "Christopher Nolan",
+      "sinopse": "Um grupo de astronautas viaja por um buraco de minhoca em busca de um novo lar para a humanidade."
+    },
+    {
+      "id": 2,
+      "titulo": "Parasita",
+      "genero": "Drama/Thriller",
+      "ano": 2019,
+      "diretor": "Bong Joon-ho",
+      "sinopse": "Uma família pobre se infiltra na vida de uma família rica com consequências inesperadas."
+    },
+    {
+      "id": 3,
+      "titulo": "O Poderoso Chefão",
+      "genero": "Drama/Crime",
+      "ano": 1972,
+      "diretor": "Francis Ford Coppola",
+      "sinopse": "A saga da família Corleone, uma das mais poderosas máfias de Nova York."
+    },
+    {
+      "id": 4,
+      "titulo": "Clube da Luta",
+      "genero": "Drama/Thriller",
+      "ano": 1999,
+      "diretor": "David Fincher",
+      "sinopse": "Um homem insatisfeito com sua vida cria um clube secreto de lutas com um estranho carismático."
+    },
+    {
+      "id": 5,
+      "titulo": "A Origem",
+      "genero": "Ficção Científica",
+      "ano": 2010,
+      "diretor": "Christopher Nolan",
+      "sinopse": "Um ladrão especialista em roubar segredos do subconsciente recebe a missão de plantar uma ideia."
+    },
+    {
+      "id": 6,
+      "titulo": "Forrest Gump",
+      "genero": "Drama/Romance",
+      "ano": 1994,
+      "diretor": "Robert Zemeckis",
+      "sinopse": "A história extraordinária de um homem simples que testemunha eventos históricos do século XX."
+    },
+    {
+      "id": 7,
+      "titulo": "Matrix",
+      "genero": "Ficção Científica/Ação",
+      "ano": 1999,
+      "diretor": "Wachowski Sisters",
+      "sinopse": "Um hacker descobre que o mundo em que vive é uma simulação controlada por máquinas."
+    },
+    {
+      "id": 8,
+      "titulo": "Cidade de Deus",
+      "genero": "Crime/Drama",
+      "ano": 2002,
+      "diretor": "Fernando Meirelles",
+      "sinopse": "A história de dois jovens na Cidade de Deus, favela do Rio de Janeiro, entre os anos 60 e 80."
+    },
+    {
+      "id": 9,
+      "titulo": "Pulp Fiction",
+      "genero": "Crime/Thriller",
+      "ano": 1994,
+      "diretor": "Quentin Tarantino",
+      "sinopse": "Histórias entrelaçadas de criminosos, um boxeador e dois assassinos no submundo de Los Angeles."
+    },
+    {
+      "id": 10,
+      "titulo": "O Senhor dos Anéis: O Retorno do Rei",
+      "genero": "Fantasia/Aventura",
+      "ano": 2003,
+      "diretor": "Peter Jackson",
+      "sinopse": "A batalha final pelo destino da Terra Média, onde Frodo e Sam chegam ao Monte da Perdição."
+    },
+    {
+      "id": 11,
+      "titulo": "O Cavaleiro das Trevas",
+      "genero": "Ação/Drama",
+      "ano": 2008,
+      "diretor": "Christopher Nolan",
+      "sinopse": "Batman enfrenta o Coringa, um criminoso sádico que ameaça espalhar o caos e a anarquia em Gotham City."
+    },
+    {
+      "id": 12,
+      "titulo": "O Auto da Compadecida",
+      "genero": "Comédia/Aventura",
+      "ano": 2000,
+      "diretor": "Guel Arraes",
+      "sinopse": "As aventuras de João Grilo e Chicó, dois nordestinos pobres que vivem de dar golpes para sobreviver."
+    },
+    {
+      "id": 13,
+      "titulo": "Vingadores: Ultimato",
+      "genero": "Ação/Ficção Científica",
+      "ano": 2019,
+      "diretor": "Anthony e Joe Russo",
+      "sinopse": "Os Vingadores restantes se reúnem em uma tentativa final de reverter as ações destrutivas de Thanos."
+    },
+    {
+      "id": 14,
+      "titulo": "Gladiador",
+      "genero": "Ação/Drama",
+      "ano": 2000,
+      "diretor": "Ridley Scott",
+      "sinopse": "Um general romano traído busca vingança contra o imperador corrupto que assassinou sua família."
+    },
+    {
+      "id": 15,
+      "titulo": "A Viagem de Chihiro",
+      "genero": "Animação/Fantasia",
+      "ano": 2001,
+      "diretor": "Hayao Miyazaki",
+      "sinopse": "Uma garota de dez anos tenta salvar seus pais após eles serem transformados em porcos em um misterioso mundo espiritual."
+    },
+    {
+      "id": 16,
+      "titulo": "O Silêncio dos Inocentes",
+      "genero": "Crime/Thriller",
+      "ano": 1991,
+      "diretor": "Jonathan Demme",
+      "sinopse": "Uma jovem cadete do FBI busca a ajuda de um assassino canibal preso para capturar outro serial killer."
+    },
+    {
+      "id": 17,
+      "titulo": "A Lista de Schindler",
+      "genero": "Drama/História",
+      "ano": 1993,
+      "diretor": "Steven Spielberg",
+      "sinopse": "A história real de Oskar Schindler, que salvou a vida de mais de mil judeus durante o Holocausto."
+    },
+    {
+      "id": 18,
+      "titulo": "Star Wars: Episódio V - O Império Contra-Ataca",
+      "genero": "Ficção Científica/Aventura",
+      "ano": 1980,
+      "diretor": "Irvin Kershner",
+      "sinopse": "Os rebeldes são forçados a recuar após o ataque do Império, enquanto Luke Skywalker treina com o Mestre Yoda."
+    },
+    {
+      "id": 19,
+      "titulo": "Central do Brasil",
+      "genero": "Drama",
+      "ano": 1998,
+      "diretor": "Walter Salles",
+      "sinopse": "Uma ex-professora amargurada ajuda um menino a encontrar seu pai no Nordeste do Brasil após a morte da mãe do garoto."
+    },
+    {
+      "id": 20,
+      "titulo": "O Rei Leão",
+      "genero": "Animação/Aventura",
+      "ano": 1994,
+      "diretor": "Roger Allers, Rob Minkoff",
+      "sinopse": "Um jovem príncipe leão foge de seu reino após o assassinato de seu pai, apenas para aprender o verdadeiro significado de responsabilidade."
+    },
+    {
+      "id": 21,
+      "titulo": "Se7en - Os Sete Crimes Capitais",
+      "genero": "Crime/Mistério",
+      "ano": 1995,
+      "diretor": "David Fincher",
+      "sinopse": "Dois detetives caçam um serial killer que usa os sete pecados capitais como motivo para seus assassinatos."
+    },
+    {
+      "id": 22,
+      "titulo": "Tropa de Elite",
+      "genero": "Ação/Crime",
+      "ano": 2007,
+      "diretor": "José Padilha",
+      "sinopse": "A rotina do batalhão de operações especiais da polícia do Rio de Janeiro e a vida de seu capitão sob extrema pressão."
+    },
+    {
+      "id": 23,
+      "titulo": "Jurassic Park: O Parque dos Dinossauros",
+      "genero": "Aventura/Ficção Científica",
+      "ano": 1993,
+      "diretor": "Steven Spielberg",
+      "sinopse": "Especialistas são convidados a visitar um parque temático com dinossauros clonados, mas a segurança falha e as criaturas escapam."
+    },
+    {
+      "id": 24,
+      "titulo": "Os Bons Companheiros",
+      "genero": "Crime/Drama",
+      "ano": 1990,
+      "diretor": "Martin Scorsese",
+      "sinopse": "A ascensão e queda da carreira de um associado da máfia ao longo de várias décadas."
+    },
+    {
+      "id": 25,
+      "titulo": "De Volta para o Futuro",
+      "genero": "Ficção Científica/Comédia",
+      "ano": 1985,
+      "diretor": "Robert Zemeckis",
+      "sinopse": "Um adolescente viaja acidentalmente de volta no tempo para 1955 e precisa garantir que seus pais se apaixonem para não deixar de existir."
+    }
+  ]
+}
