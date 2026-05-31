@@ -2,7 +2,7 @@
 
 # Movie Inversion Counter
 
-Número da Lista: 30
+Número da Lista: 30 <br>
 Conteúdo da Disciplina: Dividir e Conquistar
 
 ## Alunos
