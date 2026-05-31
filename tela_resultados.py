@@ -72,6 +72,21 @@ class TelaResultados(tk.Frame):
         self._sec_titulo("🏆  Consenso do Grupo")
         for pos, (filme, notas, media) in enumerate(medias):
             self._card_filme(pos, filme, notas, media)
+        
+                # Seção: Destaques de Afinidade
+        resultado_grupo = total_inversoes_grupo(rankings)
+        if resultado_grupo:
+            self._sec_titulo("✨  Destaques de Afinidade")
+            stats_frame = tk.Frame(self._inner, bg=COR_BG)
+            stats_frame.pack(fill="x", pady=10)
+
+            par_max = max(resultado_grupo, key=lambda k: resultado_grupo[k][0])
+            par_min = min(resultado_grupo, key=lambda k: resultado_grupo[k][0])
+
+            self._card_stat(stats_frame, "Mais Sintonizados",
+                            f"{par_min[0]} & {par_min[1]}", COR_OK)
+            self._card_stat(stats_frame, "Mais Divergentes",
+                            f"{par_max[0]} & {par_max[1]}", COR_WARN)
 
     def _sec_titulo(self, texto):
         f = tk.Frame(self._inner, bg=COR_BG)
@@ -94,3 +109,9 @@ class TelaResultados(tk.Frame):
 
         tk.Label(card, text=f"{media:.1f}", font=("Inter", 18, "bold"),
                  fg=COR_ACCENT, bg=COR_SURFACE).pack(side="right", padx=10)
+    def _card_stat(self, parent, titulo, nomes, cor):
+        card = tk.Frame(parent, bg=COR_SURFACE, padx=20, pady=15)
+        card.pack(side="left", fill="both", expand=True, padx=5)
+
+        tk.Label(card, text=titulo, font=FONTE_SMALL, fg=COR_TEXT_MUT, bg=COR_SURFACE).pack(anchor="w")
+        tk.Label(card, text=nomes, font=("Inter", 12, "bold"), fg=cor, bg=COR_SURFACE).pack(anchor="w", pady=(2, 0))
