@@ -12,8 +12,6 @@ Conteúdo da Disciplina: Dividir e Conquistar
 | 20/0032364 | Vitor Gabriel Gonçalves Dias |
 | 22/1008632 | Eduardo de Almeida Ferreira  |
 
----
-
 ## Sobre
 
 O **Movie Inversion Counter** é uma aplicação desenvolvida para analisar o grau de concordância entre diferentes pessoas na avaliação de filmes.
@@ -32,8 +30,6 @@ A ideia central é comparar as avaliações atribuídas aos filmes e medir o qua
 * Matriz de afinidade entre participantes.
 * Heatmap visual de similaridade.
 * Destaque para os participantes mais alinhados e mais divergentes.
-
----
 
 ## Fundamentação Teórica
 
@@ -56,6 +52,12 @@ Nesse caso existe uma inversão, pois a ordem relativa dos filmes foi invertida.
 Para contar inversões de forma eficiente, o projeto utiliza o algoritmo de **Merge Sort com contagem de inversões**, cuja complexidade é **O(n log n)**, enquanto uma abordagem ingênua exigiria **O(n²)**. Dessa forma, é possível comparar rankings de filmes de maneira muito mais eficiente, mesmo quando a quantidade de avaliações aumenta significativamente.
 
 ## Screenshots
+
+![Imagem 1](./assets/image1.png)
+![Imagem 2](./assets/image2.png)
+![Imagem 3](./assets/image3.png)
+![Imagem 4](./assets/image4.png)
+![Imagem 5](./assets/image5.png)
 
 ## Instalação
 
@@ -156,8 +158,8 @@ movie_inversions_completo/
 | tela_grafico.py    | Heatmap de afinidade                   |
 | tela_inversoes.py  | Detalhamento das inversões             |
 
-
-## Vídeo de Apresentação
+## Vídeo - Apresentação
+[![Assistir no YouTube](https://img.youtube.com/vi/f52sgjzDYxE/0.jpg)](https://www.youtube.com/watch?v=f52sgjzDYxE)
 
 ## Resultados Esperados
 
