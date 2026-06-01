@@ -5,7 +5,9 @@ from app import (COR_BG, COR_SURFACE, COR_CARD, COR_ACCENT, COR_ACCENT2,
                  FONTE_TITULO, FONTE_SUB, FONTE_CORPO, FONTE_SMALL)
 from inversions import total_inversoes_grupo, similaridade
 
+
 MEDALHAS = ["🥇", "🥈", "🥉"] + ["•"] * 20
+
 
 class TelaResultados(tk.Frame):
     """Mostra ranking agregado dos filmes e sumário de afinidade."""
@@ -46,7 +48,8 @@ class TelaResultados(tk.Frame):
 
         tk.Button(footer, text="← Voltar", command=self.app.voltar,
                   bg=COR_SURFACE, fg=COR_TEXT, font=FONTE_SMALL,
-                  relief="flat", padx=20, pady=10).pack(side="left")
+                  relief="flat", padx=20, pady=10, cursor="hand2").pack(side="left")
+
         tk.Button(footer, text="Ver Matriz de Afinidade  →",
                   command=lambda: self.app.mostrar("TelaGrafico"),
                   bg=COR_ACCENT, fg=COR_BG, font=("Inter", 11, "bold"),
@@ -60,7 +63,7 @@ class TelaResultados(tk.Frame):
         filmes   = self.app.filmes_sel
         n_pessoas = len(self.app.pessoas)
 
-        # Calcula nota média por filme e ordena
+        # Calcula nota média por filme
         medias = []
         for i, filme in enumerate(filmes):
             notas = [rankings[p][i] for p in self.app.pessoas]
@@ -72,8 +75,8 @@ class TelaResultados(tk.Frame):
         self._sec_titulo("🏆  Consenso do Grupo")
         for pos, (filme, notas, media) in enumerate(medias):
             self._card_filme(pos, filme, notas, media)
-        
-                # Seção: Destaques de Afinidade
+
+        # Seção: Destaques de Afinidade
         resultado_grupo = total_inversoes_grupo(rankings)
         if resultado_grupo:
             self._sec_titulo("✨  Destaques de Afinidade")
@@ -109,6 +112,7 @@ class TelaResultados(tk.Frame):
 
         tk.Label(card, text=f"{media:.1f}", font=("Inter", 18, "bold"),
                  fg=COR_ACCENT, bg=COR_SURFACE).pack(side="right", padx=10)
+
     def _card_stat(self, parent, titulo, nomes, cor):
         card = tk.Frame(parent, bg=COR_SURFACE, padx=20, pady=15)
         card.pack(side="left", fill="both", expand=True, padx=5)

@@ -1,9 +1,9 @@
 import tkinter as tk
-
 from app import (COR_BG, COR_SURFACE, COR_CARD, COR_ACCENT, COR_ACCENT2,
                  COR_TEXT, COR_TEXT_MUT, COR_OK, COR_WARN,
                  FONTE_TITULO, FONTE_SUB, FONTE_CORPO, FONTE_SMALL)
 from inversions import total_inversoes_grupo, similaridade
+
 
 def _lerp_cor(t, cor_a=COR_WARN, cor_b=COR_OK):
     """Interpola linearmente entre duas cores hexadecimais para o heatmap.
@@ -32,7 +32,7 @@ class TelaGrafico(tk.Frame):
         self._build()
 
     def _build(self):
-        # Cabeçalho
+        # Cabeçalho Moderno
         header = tk.Frame(self, bg=COR_BG, pady=20)
         header.pack(fill="x")
 
@@ -41,7 +41,7 @@ class TelaGrafico(tk.Frame):
         tk.Label(header, text="Afinidade (%) e Número de Inversões detectadas",
                  font=FONTE_CORPO, fg=COR_TEXT_MUT, bg=COR_BG).pack(pady=(5, 0))
 
-        # Canvas vazio — preenchido em ao_entrar
+        # Área Principal do Gráfico
         self.container_grafico = tk.Frame(self, bg=COR_SURFACE, bd=0)
         self.container_grafico.pack(fill="both", expand=True, padx=40, pady=10)
 
@@ -49,7 +49,7 @@ class TelaGrafico(tk.Frame):
                             highlightthickness=0, cursor="cross")
         self.cv.pack(fill="both", expand=True, padx=20, pady=20)
 
-        # Rodapé com botões de navegação
+        # Rodapé com controles
         footer = tk.Frame(self, bg=COR_BG, pady=20)
         footer.pack(fill="x", padx=40)
 
