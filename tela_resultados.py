@@ -48,7 +48,8 @@ class TelaResultados(tk.Frame):
 
         tk.Button(footer, text="← Voltar", command=self.app.voltar,
                   bg=COR_SURFACE, fg=COR_TEXT, font=FONTE_SMALL,
-                  relief="flat", padx=20, pady=10, cursor="hand2").pack(side="left")
+                  relief="flat", padx=20, pady=10,
+                  cursor="hand2", activebackground=COR_CARD).pack(side="left")
 
         tk.Button(footer, text="Ver Matriz de Afinidade  →",
                   command=lambda: self.app.mostrar("TelaGrafico"),

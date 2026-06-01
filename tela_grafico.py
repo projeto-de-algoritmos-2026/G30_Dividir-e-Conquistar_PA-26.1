@@ -56,12 +56,14 @@ class TelaGrafico(tk.Frame):
         tk.Button(footer, text="← Voltar para Resultados",
                   command=self.app.voltar,
                   bg=COR_CARD, fg=COR_TEXT, font=FONTE_SMALL,
-                  relief="flat", padx=20, pady=10, cursor="hand2").pack(side="left")
+                  relief="flat", padx=20, pady=10,
+                  cursor="hand2", activebackground=COR_SURFACE).pack(side="left")
 
         tk.Button(footer, text="Ver Detalhes das Inversões  →",
                   command=lambda: self.app.mostrar("TelaInversoes"),
                   bg=COR_ACCENT2, fg=COR_TEXT, font=("Inter", 10, "bold"),
-                  relief="flat", padx=20, pady=10, cursor="hand2").pack(side="right")
+                  relief="flat", padx=20, pady=10,
+                  cursor="hand2", activebackground=COR_ACCENT).pack(side="right")
 
     def ao_entrar(self):
         self.update_idletasks()

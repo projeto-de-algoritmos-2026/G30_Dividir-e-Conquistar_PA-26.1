@@ -1,10 +1,11 @@
 import tkinter as tk
 from tkinter import ttk
-
 from app import (COR_BG, COR_SURFACE, COR_CARD, COR_ACCENT, COR_ACCENT2,
                  COR_TEXT, COR_TEXT_MUT, COR_OK, COR_WARN,
                  FONTE_TITULO, FONTE_SUB, FONTE_CORPO, FONTE_SMALL)
 from inversions import contar_inversoes, similaridade
+
+
 class TelaInversoes(tk.Frame):
     """Exibe os pares invertidos entre cada dupla de avaliadores."""
 
@@ -31,8 +32,9 @@ class TelaInversoes(tk.Frame):
         self._combo = ttk.Combobox(sel_frame, textvariable=self._par_var,
                                    state="readonly", font=FONTE_CORPO, width=30)
         self._combo.pack(side="left", padx=15)
+        self._par_var.trace_add("write", lambda *_: self._mostrar_par())
 
-        # Área de scroll para os cards de inversão
+        # Área de scroll
         container = tk.Frame(self, bg=COR_BG)
         container.pack(fill="both", expand=True, padx=60)
 
@@ -54,7 +56,8 @@ class TelaInversoes(tk.Frame):
 
         tk.Button(footer, text="← Voltar para Gráfico", command=self.app.voltar,
                   bg=COR_SURFACE, fg=COR_TEXT, font=FONTE_SMALL,
-                  relief="flat", padx=20, pady=10, cursor="hand2").pack(side="left")
+                  relief="flat", padx=20, pady=10,
+                  cursor="hand2", activebackground=COR_CARD).pack(side="left")
 
     def ao_entrar(self):
         pessoas = self.app.pessoas
@@ -126,4 +129,3 @@ class TelaInversoes(tk.Frame):
         notas_txt = f"(Notas {p1}: {n1_1} e {n1_2} | Notas {p2}: {n2_1} e {n2_2})"
         tk.Label(card, text=notas_txt, font=("Inter", 8), fg=COR_TEXT_MUT,
                  bg=COR_SURFACE).pack(anchor="w")
-
